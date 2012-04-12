@@ -9,7 +9,7 @@ namespace HelloJenkins
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Jenkins from GitHub!");
+            Console.WriteLine("Hello, Jenkins from GitHub Hook!");
         }
     }
 }
