@@ -8,6 +8,7 @@ namespace HelloJenkinsTest
     [TestFixture]
     public class Test
     {
+        [Test]
         public void TestMethod()
         {
             Assert.True(true);
