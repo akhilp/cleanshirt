@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloJenkins", "HelloJenkins\HelloJenkins.csproj", "{BB3F9B2C-6E0A-4CF3-895D-96BB7CBCA20C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{73B64CD2-0088-443C-9F11-669741613D14}"
-	ProjectSection(SolutionItems) = preProject
-		HelloJenkins\nunit.framework.dll = HelloJenkins\nunit.framework.dll
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloJenkinsTest", "HelloJenkinsTest\HelloJenkinsTest.csproj", "{05490C70-80F6-4031-8A90-BC4429DFC877}"
 EndProject
 Global
@@ -35,6 +30,7 @@ Global
 		{05490C70-80F6-4031-8A90-BC4429DFC877}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{05490C70-80F6-4031-8A90-BC4429DFC877}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{05490C70-80F6-4031-8A90-BC4429DFC877}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05490C70-80F6-4031-8A90-BC4429DFC877}.Debug|x86.Build.0 = Debug|Any CPU
 		{05490C70-80F6-4031-8A90-BC4429DFC877}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05490C70-80F6-4031-8A90-BC4429DFC877}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05490C70-80F6-4031-8A90-BC4429DFC877}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
