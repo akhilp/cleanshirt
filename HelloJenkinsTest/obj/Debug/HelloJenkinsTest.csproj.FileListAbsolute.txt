@@ -1,0 +1,6 @@
+C:\Projects\Cleanshirt\cleanshirt\HelloJenkinsTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Cleanshirt\cleanshirt\HelloJenkinsTest\bin\Debug\HelloJenkinsTest.dll
+C:\Projects\Cleanshirt\cleanshirt\HelloJenkinsTest\bin\Debug\HelloJenkinsTest.pdb
+C:\Projects\Cleanshirt\cleanshirt\HelloJenkinsTest\bin\Debug\nunit.framework.dll
+C:\Projects\Cleanshirt\cleanshirt\HelloJenkinsTest\obj\Debug\HelloJenkinsTest.dll
+C:\Projects\Cleanshirt\cleanshirt\HelloJenkinsTest\obj\Debug\HelloJenkinsTest.pdb
