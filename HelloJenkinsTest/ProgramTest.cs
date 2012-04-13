@@ -7,12 +7,14 @@ using NUnit.Framework;
 namespace HelloJenkinsTest
 {
     [TestFixture]
-    public class Test
+    class ProgramTest
     {
         [Test]
-        public void TestMethod()
+        public void ProgramTestMethod()
         {
-            Assert.True(true);//This is a comment!
+            int expected = 1, actual = 1;
+
+            Assert.AreEqual(expected, actual, "The expected and actual results were different.");
         }
     }
 }
