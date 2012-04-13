@@ -12,7 +12,7 @@ namespace HelloJenkinsTest
         [Test]
         public void TestMethod()
         {
-            Assert.True(true);//Min white space
+            Assert.True(true);//Min white space _
         }
     }
 }
