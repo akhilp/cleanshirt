@@ -23,6 +23,15 @@ namespace Campus.Demo.ContinuousIntegration.Test
         }
 
         [Test]
+        public void NodeCountTest()
+        {
+            int expected=4, actual;
+            actual = _tree.Count;
+
+            Assert.AreEqual(expected, actual, "Expected and actual count different.");
+        }
+
+        [Test]
         public void FindPayloadTest()
         {
             string expected, actual;
