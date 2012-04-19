@@ -15,6 +15,7 @@ namespace Campus.Demo.ContinuousIntegration.Test
         [TestFixtureSetUp]
         public void SetUpFixture()
         {
+            //Create tree
             _tree = new Tree();
             _tree.Add("www.newspaper.com", "default news script");
             _tree.Add("www.newspaper.com/sports", "sports script");
