@@ -49,7 +49,7 @@ namespace CampusDemo.ContinuousIntegration.URLTree
             while (index < size)
             {                
 
-                TreeNode nextNode = Contains(node, value[index]);
+                TreeNode nextNode = node.Contains(value[index]);
 
                 //Continue down the list
                 if (nextNode != null && index != size - 1)
@@ -72,7 +72,7 @@ namespace CampusDemo.ContinuousIntegration.URLTree
                         newNode.payload = payload;
                         _count++; 
                     }
-                    node.NodeList.Add(newNode);
+                    node.AddNode(newNode);
                     node = newNode;
                 }
 
@@ -116,22 +116,6 @@ namespace CampusDemo.ContinuousIntegration.URLTree
             }
 
             return returnNode;
-        }
-
-        private TreeNode Contains(TreeNode node, char character)
-        {
-            TreeNode resultNode = null;
-
-            for (int i = 0; i < node.NodeList.Count; i++)
-            {
-                if (node.NodeList[i].Character == character)
-                {
-                    resultNode = node.NodeList[i];
-                    break;
-                }
-            }
-
-            return resultNode;
         }
     }
 }
