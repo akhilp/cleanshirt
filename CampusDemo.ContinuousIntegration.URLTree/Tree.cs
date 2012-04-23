@@ -102,7 +102,7 @@ namespace CampusDemo.ContinuousIntegration.URLTree
                 }
                 else
                 {
-                    TreeNode nextNode = Contains(node, url[i]);
+                    TreeNode nextNode = node.Contains(url[i]);
                     if (nextNode == null)
                     {
                         break;
