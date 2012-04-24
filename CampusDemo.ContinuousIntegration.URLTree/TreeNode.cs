@@ -36,6 +36,5 @@ namespace CampusDemo.ContinuousIntegration.URLTree
 
             return resultNode;
         }
-
     }
 }
