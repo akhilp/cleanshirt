@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SpeedCollections;
 
 namespace CampusDemo.ContinuousIntegration.URLTree
 {
@@ -11,26 +10,29 @@ namespace CampusDemo.ContinuousIntegration.URLTree
         public String payload { get; set; }
         public char Character { get; set; }
         public List<TreeNode> NodeList { get; set; }
-        public SpeedDictionary<char,  TreeNode> NodeDictionary { get; set; }
-        
+
         public TreeNode()
-        {         
-            NodeDictionary = new SpeedDictionary<char, TreeNode>();
+        {
+            NodeList = new List<TreeNode>();
         }
 
         public void AddNode(TreeNode newNode)
-        {            
-            this.NodeDictionary.Add(newNode.Character, newNode);
+        {
+            this.NodeList.Add(newNode);
         }
 
         public TreeNode Contains(char character)
         {
             TreeNode resultNode = null;
 
-            if (NodeDictionary.Contains(character))
+            for (int i = 0; i < NodeList.Count; i++)
             {
-                resultNode = NodeDictionary.Retreive(character);
-            }               
+                if (this.NodeList[i].Character == character)
+                {
+                    resultNode = this.NodeList[i];
+                    break;
+                }
+            }
 
             return resultNode;
         }

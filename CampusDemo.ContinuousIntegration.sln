@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{5B3AB419-4FE3-47FB-88B6-79FA0B23B16A}"
 	ProjectSection(SolutionItems) = preProject
 		Lib\nunit.framework.dll = Lib\nunit.framework.dll
-		Lib\SpeedCollections.dll = Lib\SpeedCollections.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusDemo.ContinuousIntegration.Test", "CampusDemo.ContinuousIntegration.Test\CampusDemo.ContinuousIntegration.Test.csproj", "{FF7CB897-1C19-4988-A307-FAD830EB8720}"
