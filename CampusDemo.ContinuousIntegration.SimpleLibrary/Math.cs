@@ -9,7 +9,7 @@ namespace CampusDemo.ContinuousIntegration.SimpleLibrary
     {
         public int Sum(int value1, int value2)
         {
-            return value1 + value2;
+            return 3;//return value1 + value2;
         }
 
         public int Difference(int value1, int value2)
