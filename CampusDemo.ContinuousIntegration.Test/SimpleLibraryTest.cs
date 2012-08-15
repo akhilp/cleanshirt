@@ -25,8 +25,7 @@ namespace Campus.Demo.ContinuousIntegration.Test
 
             actual=_math.Sum(x, y);
 
-            Assert.AreEqual(expected, actual, "The value returned was different than the expected value.");
-            Assert.IsTrue(false);
+            Assert.AreEqual(expected, actual, "The value returned was different than the expected value.");            
         }
 
         [Test]
