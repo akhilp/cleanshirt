@@ -21,17 +21,3 @@ Then /^I should see a link to "(.*?)" with text "(.*?)"$/ do |arg1, arg2|
 	l.exists?
 	l.click
 end
-
-Given /^I am logged in to "(.*?)"$/ do |arg1|
-	l = b.link :text => arg1
-	l.exists?
-end
-
-When /^I see the word "(.*?)"$/ do |arg1|
-    d = b.span :text => 'arg1'
-	d.exists?
-end
-
-Then /^I should logout "(.*?)"$/ do |arg1|
-	b.goto arg1
-end
