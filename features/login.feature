@@ -1,6 +1,5 @@
 Feature: Login to zonar systems
 	
-	@bvt	
 	Scenario: Enter login informaiton and submit
 		Given I have opened "https://qa1.zonarsystems.net/mobile/"
 		Then I input the credentials
