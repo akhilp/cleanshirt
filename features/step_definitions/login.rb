@@ -1,11 +1,19 @@
 require 'watir-webdriver'
 require 'headless'
 
+client = Selenium::WebDriver::Remote::Http::Default.new
+client.timeout = 60 
+@browser = Watir::Browser.new :chrome, :http_client => client
+
 headless = Headless.new
 b = Watir::Browser.new :chrome
 
 Given /^I have opened "(.*?)"$/ do |url|  
-    b.goto url
+    begin
+	  b.goto url
+	rescue => e
+	  puts "Browser timed out: #{e}"
+	end
 end
 
 Then /^I input the credentials$/ do
