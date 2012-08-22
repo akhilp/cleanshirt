@@ -1,6 +1,7 @@
 require 'watir-webdriver'
 require 'headless'
 
+headless = Headless.new
 b = Watir::Browser.new :chrome
 
 Given /^I have opened "(.*?)"$/ do |url|  
@@ -36,3 +37,6 @@ end
 Then /^I should logout "(.*?)"$/ do |arg1|
 	b.goto arg1
 end
+
+b.close
+headless.destroy
