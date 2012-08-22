@@ -1,7 +1,8 @@
 require 'watir-webdriver'
 
 #b = Watir::Browser.new :chrome
-b = Watir::Browser.new# :chrome, :switches => %w[--ignore-certificate-errors]
+b = Watir::Browser.new :ie
+# :chrome, :switches => %w[--ignore-certificate-errors]
 
 Given /^I have opened "(.*?)"$/ do |url|  
     b.goto url
