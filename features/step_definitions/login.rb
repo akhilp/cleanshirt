@@ -1,4 +1,5 @@
 require 'watir-webdriver'
+require 'headless'
 
 b = Watir::Browser.new :chrome
 
