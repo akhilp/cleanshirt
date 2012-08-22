@@ -1,5 +1,3 @@
-require 'watir-webdriver'
-
 Given /^I have opened "(.*?)"$/ do |url|
 
 end
