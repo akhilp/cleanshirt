@@ -1,5 +1,4 @@
-Feature: Main
-	Login and out of zonar systems
+Feature: Login to zonar systems
 	
 	@bvt	
 	Scenario: Enter login informaiton and submit

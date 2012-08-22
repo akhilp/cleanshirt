@@ -1,6 +1,6 @@
 Feature: Testing logout
 
-	@bvt	
+	@bvt
 	Scenario: Log out
 		Given I am logged in to "https://qa1.zonarsystems.net/mobile/"
 		When I see the word "Dashboard"(.*?)"$/"
