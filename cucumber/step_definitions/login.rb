@@ -1,6 +1,12 @@
 require 'watir-webdriver'
 
 b = Watir::Browser.new :chrome
+#profile = Selenium::WebDriver::Chrome::Profile.new
+#profile['download.prompt_for_download'] = false
+#profile['download.default_directory'] = "/Users/akhil/code/cleanshirt/cucumber/support"
+ 
+#b = Watir::Browser.new :chrome, :profile => profile
+
 
 Given /^I have opened "(.*?)"$/ do |url|
     b.goto url
