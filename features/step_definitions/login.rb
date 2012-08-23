@@ -11,9 +11,7 @@ b = Watir::Browser.new :chrome, :http_client => client
 #profile = Selenium::WebDriver::Chrome::Profile.new
 #profile['download.prompt_for_download'] = false
 #profile['download.default_directory'] = "/Users/akhil/code/cleanshirt/cucumber/support"
- 
 #b = Watir::Browser.new :chrome, :profile => profile
-
 
 Given /^I have opened "(.*?)"$/ do |url|  
     b.goto url
@@ -47,4 +45,6 @@ end
 
 Then /^I should logout "(.*?)"$/ do |arg1|
 	b.goto arg1
+	b.close
 end
+
