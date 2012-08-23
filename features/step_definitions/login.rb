@@ -1,6 +1,13 @@
 require 'watir-webdriver'
+require 'selenium/server' 
 
-b = Watir::Browser.new :chrome
+client = Selenium::WebDriver::Remote::Http::Default.new
+client.timeout = 180 # seconds – default is 60
+
+b = Watir::Browser.new :chrome, :http_client => client
+
+#b = Watir::Browser.new :chrome
+
 #profile = Selenium::WebDriver::Chrome::Profile.new
 #profile['download.prompt_for_download'] = false
 #profile['download.default_directory'] = "/Users/akhil/code/cleanshirt/cucumber/support"
