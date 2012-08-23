@@ -1,19 +1,15 @@
-require "rubygems" 
-#require "bundler/setup" 
+require 'watir-webdriver'
 
-require "watir-webdriver" 
-require 'selenium/server' 
+b = Watir::Browser.new :chrome
+#profile = Selenium::WebDriver::Chrome::Profile.new
+#profile['download.prompt_for_download'] = false
+#profile['download.default_directory'] = "/Users/akhil/code/cleanshirt/cucumber/support"
+ 
+#b = Watir::Browser.new :chrome, :profile => profile
 
-server = Selenium::Server.new("selenium-server-standalone-2.0b1.jar", :background => true) 
-server.timeout = 120
-server.start 
-
-include Selenium
-capabilities = WebDriver::Remote::Capabilities.htmlunit(:javascript_enabled => true)
-b = Watir::Browser.new(:remote, :url => 'http://127.0.0.1:4444/wd/hub', :desired_capabilities => capabilities) 
 
 Given /^I have opened "(.*?)"$/ do |url|  
-	b.goto url
+    b.goto url
 end
 
 Then /^I input the credentials$/ do
@@ -45,6 +41,3 @@ end
 Then /^I should logout "(.*?)"$/ do |arg1|
 	b.goto arg1
 end
-
-b.close 
-server.stop 
