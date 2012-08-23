@@ -5,6 +5,7 @@ require "watir-webdriver"
 require 'selenium/server' 
 
 server = Selenium::Server.new("selenium-server-standalone-2.0b1.jar", :background => true) 
+server.timeout = 120
 server.start 
 
 include Selenium
